@@ -203,7 +203,7 @@ Nếu vẫn bị lỗi thì các bạn xui thôi! Mình đùa đấy, các bạn
 | --------------- | ------------------- |
 | ![iOS - Done](https://github.com/vanle57/flutter-flavor/blob/main/images/iOS%20-%20done.png) | ![Android - Done]() |
 
-#### [Demo source code]([flutter-flavor/demo source code/demo_flavor at main · vanle57/flutter-flavor · GitHub](https://github.com/vanle57/flutter-flavor/tree/main/demo%20source%20code/demo_flavor))
+#### [Demo source code](https://github.com/vanle57/flutter-flavor/tree/main/demo%20source%20code/demo_flavor))
 
 ### 7. Tạm kết
 
