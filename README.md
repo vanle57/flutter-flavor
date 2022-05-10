@@ -194,7 +194,9 @@ Sau đó các bạn vào project Runner -> tab Info sẽ thấy "No Configuratio
 Nếu vẫn bị lỗi thì các bạn xui thôi! Mình đùa đấy, các bạn nhớ kiểm tra mình đã thêm dòng code <mark>#include "Generated.xcconfig"</mark> vào các configuration file chưa.
 
 **Kết quả:** Bạn có thể thấy 3 cái app với 3 tên khác nhau tương ứng với các flavor do mình đã tạo ở bước trước đó!
-![iOS - Done](https://github.com/vanle57/flutter-flavor/blob/main/images/iOS%20-%20done.png)
+| iOS             | Android             |
+| --------------- | ------------------- |
+| ![iOS - Done](https://github.com/vanle57/flutter-flavor/blob/main/images/iOS%20-%20done.png) | ![Android - Done]() |
 
 #### Demo source code
 [Demo flavor](https://github.com/vanle57/flutter-flavor/tree/main/demo%20source%20code/demo_flavor)
