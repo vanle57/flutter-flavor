@@ -4,7 +4,7 @@ Chào bạn đến với bài viết đầu tiên của mình! Hôm nay mình b�
 
 Trước khi đi vào chủ đề chính thì mình xin tự giới thiệu. Mình là Lê Hồng Vân, là nữ và là 1 dev iOS chân chính, có kinh nghiệm gần 4 năm trong ngôn ngữ lập trình Swift. Mình mới lấn sân sang Flutter qua việc tự học hỏi, tìm tòi hơn nửa năm nay. Trên vị thế của một đứa tự tìm hiểu thì mình nhận ra rằng có những thứ về Flutter thật sự rất ít nguồn tài liệu hoặc bài viết, hoặc nếu có thì cũng rất chi là khó hiểu. Nói chung tài liệu về Flutter giống như cánh cửa đưa mình vào đa vũ trụ hỗn loạn vậy đó! Vậy nên, mình nảy ra mong muốn chia sẻ lại với những người như mình các kiến thức mình cóp nhặt được. Có thể sẽ có sai sót vì mình vẫn chưa vững lắm nên có gì mong các bạn nhiệt tình góp ý.
 
-Lan man đủ rồi, bây giờ mình bắt tay vào chủ đề chính, đó là <mark>**Flutter Flavors**</mark>
+Lan man đủ rồi, bây giờ mình bắt tay vào chủ đề chính, đó là <mark>**Flutter Flavors**</mark>.
 
 ### Flavor là gì? Và vì sao ta cần chúng?
 
@@ -84,7 +84,7 @@ productFlavors {
   
   `android/app/src/main/AndroidManifest.xml`
 
-![aaaa](/Users/mac/Desktop/Screen%20Shot%202022-05-09%20at%2016.43.17.png)
+![Android - Edit app name](https://github.com/vanle57/flutter-flavor/blob/main/images/Android%20-%20Edit%20app%20name.png)
 
 ****Lưu ý***: tên biến app_name ở đây phải tương ứng với tên biến đã define trong các product flavor mà chúng ta đã define trước đó ở build.gradle.
 
@@ -96,23 +96,22 @@ Không giống với android có thể thực hiện trên giao diện VSCode ho
 
 - Bước 1: Thêm các scheme tương ứng cho 3 flavor
   
-  ![Add scheme](/Users/mac/Desktop/Screen%20Shot%202022-05-09%20at%2017.12.49.png)
+  ![iOS - Add schemes - new](https://github.com/vanle57/flutter-flavor/blob/main/images/iOS%20-%20Add%20schemes%20-%20new.png)
   
-  ![Add scheme](/Users/mac/Desktop/Screen%20Shot%202022-05-09%20at%2017.14.01.png)
+  ![iOS - Add schemes - name](https://github.com/vanle57/flutter-flavor/blob/main/images/iOS%20-%20Add%20schemes%20-%20name.png)
   
-  ![All schemes](/Users/mac/Desktop/Screen%20Shot%202022-05-09%20at%2017.16.44.png)
+  ![iOS - Add schemes - done](https://github.com/vanle57/flutter-flavor/blob/main/images/iOS%20-%20Add%20schemes%20-%20done.png)
   
   
-
 - Bước 2:
   
   - Thêm các configuration file tương ứng với 3 flavor. Click chuột phải vào `Runner/Flutter` chọn *New File*, nhập "con"" vào ô filter chọn *Next* và đặt tên tương ứng.
   
-  ![Thêm configuration file](/Users/mac/Desktop/Screen%20Shot%202022-05-09%20at%2017.03.07.png)
+  ![iOS - Add configuration files](https://github.com/vanle57/flutter-flavor/blob/main/images/iOS%20-%20Add%20configuration%20files.png)
   
   - Sau khi tạo xong 3 file ta được giao diện như sau:
   
-  ![Configuration files](/Users/mac/Desktop/Screen%20Shot%202022-05-09%20at%2016.59.40.png)
+  ![iOS - Add configuration files - done](https://github.com/vanle57/flutter-flavor/blob/main/images/iOS%20-%20Add%20configuration%20files%20-%20done.png)
   
   ***Lưu ý quan trọng:*** Các bạn nhớ thêm dòng `#include *Generated.xcconfig*` vào các file vừa mới tạo, nếu có Pods thì thêm cả dòng `#include *Pods/Target Support Files/Pods-Runner/Pods-Runner.{tên scheme tương ứng}.xcconfig*`
 
@@ -122,17 +121,17 @@ Không giống với android có thể thực hiện trên giao diện VSCode ho
   
   - Vào project Runner -> chọn tab Info và thực hiện cấu hình trong Configurations
     
-    ![Configurations](/Users/mac/Desktop/Screen%20Shot%202022-05-09%20at%2017.20.28.png)
+    ![iOS - Edit configurations](https://github.com/vanle57/flutter-flavor/blob/main/images/iOS%20-%20Edit%20configurations.png)
   
   - Bấm vào dấu + và chọn *Duplicate "Debug" Configuration* và đặt tên cho configuration là <mark>Debug-dev</mark>. Lưu ý là phải tạo ra 3 configuration tương ứng với 3 scheme và chọn file configuration tương ứng.
     
-    ![Duplicate Debug-dev](/Users/mac/Desktop/Screen%20Shot%202022-05-09%20at%2017.22.22.png)
+    ![iOS - Edit configurations - duplicate](https://github.com/vanle57/flutter-flavor/blob/main/images/iOS%20-%20Edit%20configurations%20-%20duplicate.png)
     
-    ![Add configuration for Debug](/Users/mac/Desktop/Screen%20Shot%202022-05-09%20at%2017.32.04.png)
+    ![iOS - Edit configurations - debug done](https://github.com/vanle57/flutter-flavor/blob/main/images/iOS%20-%20Edit%20configurations%20-%20debug%20done.png)
   
   - Lặp lại các bước trên đối với configuration **Release**
     
-    ![Add configuration for Release](/Users/mac/Desktop/Screen%20Shot%202022-05-10%20at%2009.29.11.png)
+    ![iOS - Edit configurations - release done](https://github.com/vanle57/flutter-flavor/blob/main/images/iOS%20-%20Edit%20configurations%20-%20release%20done.png)
     
     
 
@@ -140,21 +139,21 @@ Không giống với android có thể thực hiện trên giao diện VSCode ho
   
   - Vào project Runner -> chọn tab Build Settings -> click vào dấu + chọn *Add User-Defined Setting*.
     
-    ![Add User-Defined Setting](/Users/mac/Desktop/Screen%20Shot%202022-05-10%20at%2009.43.00.png)
+    ![iOS - Add user-defined](https://github.com/vanle57/flutter-flavor/blob/main/images/iOS%20-%20Add%20user-defined.png)
   
   - Đặt tên cho User-Defined là <mark>APP_NAME</mark> và đặt app name tương ứng với từng configuration.
     
-    ![APP_NAME](/Users/mac/Desktop/Screen%20Shot%202022-05-10%20at%2009.47.39.png)
+    ![iOS - Add user-defined - APP_NAME](https://github.com/vanle57/flutter-flavor/blob/main/images/iOS%20-%20Add%20user-defined%20-%20APP_NAME.png)
   
   - Vào file `Runner/Runner/Info.plist` và sửa Bundle Display Name thành `$(APP_NAME)`.
     
-    ![Bundle Display Name](/Users/mac/Desktop/Screen%20Shot%202022-05-10%20at%2009.50.00.png)
+    ![iOS - Edit Bundle Display Name](https://github.com/vanle57/flutter-flavor/blob/main/images/iOS%20-%20Edit%20Bundle%20Display%20Name.png)
   
   - Thực hiên tương tự đối với <mark>APP_BUNDLE_IDENTIFIER</mark>
     
-    ![Add APP_BUNDLE_IDENTIFIER](/Users/mac/Desktop/Screen%20Shot%202022-05-10%20at%2010.38.37.png)
+    ![iOS - Add user-defined - APP_BUNDLE_INDENTIFIER](https://github.com/vanle57/flutter-flavor/blob/main/images/iOS%20-%20Add%20user-defined%20-%20APP_BUNDLE_INDENTIFIER.png)
     
-    ![Bundle identifier](/Users/mac/Desktop/Screen%20Shot%202022-05-10%20at%2010.38.49.png)
+    ![iOS - Edit Bundle Identifier](https://github.com/vanle57/flutter-flavor/blob/main/images/iOS%20-%20Edit%20Bundle%20Identifier.png)
 
 #### Run by terminal
 
@@ -178,23 +177,31 @@ Phần config đã xong! Bây giờ mình cùng run bằng command để xem k�
 >   Command: /usr/bin/arch -arm64e xcrun simctl install F98D3839-D090-4FF5-B57F-EF6DDD31DDAD
 >   /Users/mac/Documents/Development/Flutter/demo_flavor/build/ios/iphonesimulator/Runner.app
 
-thì hãy cứ bình tĩnh xử lý theo mình: Click chuột phải vào Runner/Flutter chọn *Show in Finder* và xem thử 3 file configuration dev, staging và product có đang nằm trong folder Runner/Flutter không. Nếu không, hãy move chúng vào. Sau đó quay về XCode bạn sẽ thấy giao diện đỏ lè như vậy
+thì hãy cứ bình tĩnh xử lý theo mình: Click chuột phải vào `Runner/Flutter` chọn *Show in Finder* và xem thử 3 file configuration dev, staging và product có đang nằm trong folder Runner/Flutter không. Nếu không, hãy move chúng vào. Sau đó quay về XCode bạn sẽ thấy giao diện đỏ lè như vậy
 
-![Error](/Users/mac/Desktop/Screen%20Shot%202022-05-10%20at%2010.08.13.png)
+![iOS - error - no configuration files](https://github.com/vanle57/flutter-flavor/blob/main/images/iOS%20-%20error%20-%20no%20configuration%20files.png)
 
 Xoá 3 file đỏ đi và tiếp tục click chuột phải vào `Runner/Flutter` chọn *Add File...*, tìm và add 3 file đã xoá vào.
 
-![Error - Add file](/Users/mac/Desktop/Screen%20Shot%202022-05-10%20at%2010.10.38.png)
+![iOS - error - re-add configuration files](https://github.com/vanle57/flutter-flavor/blob/main/images/iOS%20-%20error%20-%20re-add%20configuration%20files.png)
 
 Sau đó các bạn vào project Runner -> tab Info sẽ thấy "No Configurations Set", thực hiện add file configuration vào lại.
 
-![Add configuration again](/Users/mac/Desktop/Screen%20Shot%202022-05-10%20at%2010.17.02.png)
+![iOS - error - no configuration set](https://github.com/vanle57/flutter-flavor/blob/main/images/iOS%20-%20error%20-%20no%20configuration%20set.png)
+
+![iOS - error - re-add configuration set](https://github.com/vanle57/flutter-flavor/blob/main/images/iOS%20-%20error%20-%20re-add%20configuration%20set.png)
 
 Nếu vẫn bị lỗi thì các bạn xui thôi! Mình đùa đấy, các bạn nhớ kiểm tra mình đã thêm dòng code <mark>#include "Generated.xcconfig"</mark> vào các configuration file chưa.
 
+**Kết quả:** Bạn có thể thấy 3 cái app với 3 tên khác nhau tương ứng với các flavor do mình đã tạo ở bước trước đó!
+![iOS - Done](https://github.com/vanle57/flutter-flavor/blob/main/images/iOS%20-%20done.png)
 
+#### Demo source code
 
 #### Tạm kết
 
 Tới đây về cơ bản là xong, có thể các bạn sẽ muốn sử dụng nút build thay vì phải gõ lệnh command thì có thể tham khảo bài viết ở [link này](). Cảm ơn và hẹn gặp lại.
 
+### Tài liệu tham khảo
+- [Bạn đã biết những gì về môi trường Production - Duong Trung Hieu](https://viblo.asia/p/ban-da-biet-nhung-gi-ve-moi-truong-production-ByEZkMBY5Q0)
+- [Flavoring Flutter - Salvatore Giordano](https://medium.com/@salvatoregiordanoo/flavoring-flutter-392aaa875f36)
