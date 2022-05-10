@@ -8,6 +8,7 @@ Chào bạn đến với bài viết đầu tiên của mình! Hôm nay mình b�
 
 Trước khi đi vào chủ đề chính thì mình xin tự giới thiệu. Mình là Lê Hồng Vân, là nữ và là 1 dev iOS chân chính, có kinh nghiệm gần 4 năm trong ngôn ngữ lập trình Swift. Mình mới lấn sân sang Flutter qua việc tự học hỏi, tìm tòi hơn nửa năm nay. Trên vị thế của một đứa tự tìm hiểu thì mình nhận ra rằng có những thứ về Flutter thật sự rất ít nguồn tài liệu hoặc bài viết, hoặc nếu có thì cũng rất chi là khó hiểu. Nói chung tài liệu về Flutter giống như cánh cửa đưa mình vào đa vũ trụ hỗn loạn vậy đó! Vậy nên, mình nảy ra mong muốn chia sẻ lại với những người như mình các kiến thức mình cóp nhặt được. Có thể sẽ có sai sót vì mình vẫn chưa vững lắm nên có gì mong các bạn nhiệt tình góp ý.
 
+Follow me more:
 | [![Facebook](https://upload.wikimedia.org/wikipedia/commons/0/0d/Facebook_logo_%28June_30%2C_2015%29.png)](https://www.facebook.com/van.may.750/) |    [![Gmail](https://www.nicepng.com/png/detail/15-152707_gmail-logo-png-vector-gmail-new-logo-png.png)](mailto:hongvan.571996@gmail.com) |  [![Linkedin](https://www.pmolearning.co.uk/wp-content/uploads/2019/08/linkedin-logo.png)]()   |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | --- |
 
@@ -203,7 +204,7 @@ Nếu vẫn bị lỗi thì các bạn xui thôi! Mình đùa đấy, các bạn
 | --------------- | ------------------- |
 | ![iOS - Done](https://github.com/vanle57/flutter-flavor/blob/main/images/iOS%20-%20done.png) | ![Android - Done]() |
 
-#### [Demo source code](https://github.com/vanle57/flutter-flavor/tree/main/demo%20source%20code/demo_flavor))
+#### [Demo source code](https://github.com/vanle57/flutter-flavor/tree/main/demo%20source%20code/demo_flavor)
 
 ### 7. Tạm kết
 
