@@ -1,12 +1,27 @@
-# Flutter Flavors
+# Flavor Configurations - Flutter
+
+## 1. Intro
 
 Chào bạn đến với bài viết đầu tiên của mình! Hôm nay mình bắt đầu sự nghiệp viết lách về kỹ thuật mà bấy lâu nay mình đã trì hoãn.
 
+## 2. Giới thiệu bản thân
+
 Trước khi đi vào chủ đề chính thì mình xin tự giới thiệu. Mình là Lê Hồng Vân, là nữ và là 1 dev iOS chân chính, có kinh nghiệm gần 4 năm trong ngôn ngữ lập trình Swift. Mình mới lấn sân sang Flutter qua việc tự học hỏi, tìm tòi hơn nửa năm nay. Trên vị thế của một đứa tự tìm hiểu thì mình nhận ra rằng có những thứ về Flutter thật sự rất ít nguồn tài liệu hoặc bài viết, hoặc nếu có thì cũng rất chi là khó hiểu. Nói chung tài liệu về Flutter giống như cánh cửa đưa mình vào đa vũ trụ hỗn loạn vậy đó! Vậy nên, mình nảy ra mong muốn chia sẻ lại với những người như mình các kiến thức mình cóp nhặt được. Có thể sẽ có sai sót vì mình vẫn chưa vững lắm nên có gì mong các bạn nhiệt tình góp ý.
+
+| [![Facebook](https://upload.wikimedia.org/wikipedia/commons/0/0d/Facebook_logo_%28June_30%2C_2015%29.png)](https://www.facebook.com/van.may.750/) |    [![Gmail](https://www.nicepng.com/png/detail/15-152707_gmail-logo-png-vector-gmail-new-logo-png.png)](mailto:hongvan.571996@gmail.com) |  [![Linkedin](https://www.pmolearning.co.uk/wp-content/uploads/2019/08/linkedin-logo.png)]()   |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- | --- |
 
 Lan man đủ rồi, bây giờ mình bắt tay vào chủ đề chính, đó là <mark>**Flutter Flavors**</mark>.
 
-### Flavor là gì? Và vì sao ta cần chúng?
+## 3. Chuẩn bị
+
+- IDE:
+  - VSCode version 1.67.0
+  - Android studio version 
+  - XCode version 13.3.1
+- Flutter SDK version 2.10.5
+
+## 4. Flavor là gì? Và vì sao ta cần chúng?
 
 Đôi khi trong một dự án, bạn cần phải có các môi trường khác nhau để build các app khác nhau phục vụ cho mỗi mục đích riêng biệt. Thông thường sẽ được chia ra làm các môi trường sau:
 
@@ -34,11 +49,11 @@ Vậy thì cứ mỗi lần build cho mục đích nào, ta lại phải thay th
 
 > Flutter gộp chung 2 tên gọi này lại và sử dụng thuật ngữ chung là flavor.
 
-### Cách triển khai flavor trong flutter
+## 5. Cách triển khai flavor trong flutter
 
 Đầu tiên, chúng ta phải cấu hình một chút cho từng platform. Mình sẽ thực hiện step by step và kèm theo lời giải thích phía dưới nhé!
 
-#### Cấu hình cho Android:
+### 5.1. Cấu hình cho Android:
 
 - Bước 1: Thêm các flavor vào file `android/app/src/build.graddle`.
 
@@ -61,7 +76,7 @@ productFlavors {
         resValue "string", "app_name", "[stg] demo flavor"
         applicationIdSuffix ".stg"
     }
-    
+
     product {
         dimension "flavor-type"
         resValue "string", "app_name", "[prod] demo flavor"
@@ -77,9 +92,6 @@ productFlavors {
 2. Dòng code này để định nghĩa 1 biến kiểu string, tên biến là "app_name" và giá trị tương ứng cho mỗi flavor.
 
 3. Định nghĩa các applicationIdSuffix tương ứng.
-
-
-
 - Bước 2: (Tuỳ chọn) Định nghĩa app name, app icon riêng cho mỗi flavor trong file 
   
   `android/app/src/main/AndroidManifest.xml`
@@ -88,9 +100,7 @@ productFlavors {
 
 ****Lưu ý***: tên biến app_name ở đây phải tương ứng với tên biến đã define trong các product flavor mà chúng ta đã define trước đó ở build.gradle.
 
-
-
-#### Cấu hình cho iOS:
+### 5.2. Cấu hình cho iOS:
 
 Không giống với android có thể thực hiện trên giao diện VSCode hoặc Android Studio, các bước cấu hình cho iOS cần được thực hiện trên giao diện XCode.
 
@@ -101,8 +111,7 @@ Không giống với android có thể thực hiện trên giao diện VSCode ho
   ![iOS - Add schemes - name](https://github.com/vanle57/flutter-flavor/blob/main/images/iOS%20-%20Add%20schemes%20-%20name.png)
   
   ![iOS - Add schemes - done](https://github.com/vanle57/flutter-flavor/blob/main/images/iOS%20-%20Add%20schemes%20-%20done.png)
-  
-  
+
 - Bước 2:
   
   - Thêm các configuration file tương ứng với 3 flavor. Click chuột phải vào `Runner/Flutter` chọn *New File*, nhập "con"" vào ô filter chọn *Next* và đặt tên tương ứng.
@@ -114,8 +123,6 @@ Không giống với android có thể thực hiện trên giao diện VSCode ho
   ![iOS - Add configuration files - done](https://github.com/vanle57/flutter-flavor/blob/main/images/iOS%20-%20Add%20configuration%20files%20-%20done.png)
   
   ***Lưu ý quan trọng:*** Các bạn nhớ thêm dòng `#include *Generated.xcconfig*` vào các file vừa mới tạo, nếu có Pods thì thêm cả dòng `#include *Pods/Target Support Files/Pods-Runner/Pods-Runner.{tên scheme tương ứng}.xcconfig*`
-
-
 
 - Bước 3: Cấu hình cho các scheme đã tạo ở bước 1
   
@@ -132,8 +139,6 @@ Không giống với android có thể thực hiện trên giao diện VSCode ho
   - Lặp lại các bước trên đối với configuration **Release**
     
     ![iOS - Edit configurations - release done](https://github.com/vanle57/flutter-flavor/blob/main/images/iOS%20-%20Edit%20configurations%20-%20release%20done.png)
-    
-    
 
 - Bước 4: (Tuỳ chọn) Định nghĩa app name, app bunder identifier cho riêng mỗi flavor trong **USER-DEFINED**. 
   
@@ -155,7 +160,7 @@ Không giống với android có thể thực hiện trên giao diện VSCode ho
     
     ![iOS - Edit Bundle Identifier](https://github.com/vanle57/flutter-flavor/blob/main/images/iOS%20-%20Edit%20Bundle%20Identifier.png)
 
-#### Run by terminal
+### 6. Thực thi
 
 Phần config đã xong! Bây giờ mình cùng run bằng command để xem kết quả nhé!
 
@@ -198,13 +203,13 @@ Nếu vẫn bị lỗi thì các bạn xui thôi! Mình đùa đấy, các bạn
 | --------------- | ------------------- |
 | ![iOS - Done](https://github.com/vanle57/flutter-flavor/blob/main/images/iOS%20-%20done.png) | ![Android - Done]() |
 
-#### Demo source code
-[Demo flavor](https://github.com/vanle57/flutter-flavor/tree/main/demo%20source%20code/demo_flavor)
+#### [Demo source code]([flutter-flavor/demo source code/demo_flavor at main · vanle57/flutter-flavor · GitHub](https://github.com/vanle57/flutter-flavor/tree/main/demo%20source%20code/demo_flavor))
 
-#### Tạm kết
+### 7. Tạm kết
 
 Tới đây về cơ bản là xong, nếu các bạn muốn sử dụng nút build thay vì phải gõ lệnh command thì có thể tham khảo bài viết ở [link này](). Cảm ơn và hẹn gặp lại.
 
-### Tài liệu tham khảo
+#### Tài liệu tham khảo
+
 - [Bạn đã biết những gì về môi trường Production - Duong Trung Hieu](https://viblo.asia/p/ban-da-biet-nhung-gi-ve-moi-truong-production-ByEZkMBY5Q0)
 - [Flavoring Flutter - Salvatore Giordano](https://medium.com/@salvatoregiordanoo/flavoring-flutter-392aaa875f36)
