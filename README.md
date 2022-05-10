@@ -197,6 +197,7 @@ Nếu vẫn bị lỗi thì các bạn xui thôi! Mình đùa đấy, các bạn
 ![iOS - Done](https://github.com/vanle57/flutter-flavor/blob/main/images/iOS%20-%20done.png)
 
 #### Demo source code
+[Demo flavor](https://github.com/vanle57/flutter-flavor/tree/main/demo%20source%20code/demo_flavor)
 
 #### Tạm kết
 
