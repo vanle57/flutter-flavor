@@ -18,7 +18,7 @@ Lan man đủ rồi, bây giờ mình bắt tay vào chủ đề chính, đó l�
 
 - IDE:
   - VSCode version 1.67.0
-  - Android studio version 
+  - Android Studio Bumblebee version 2021.1.1 Patch 3
   - XCode version 13.3.1
 - Flutter SDK version 2.10.5
 
