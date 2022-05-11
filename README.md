@@ -183,7 +183,7 @@ Phần config đã xong! Bây giờ mình cùng run bằng command để xem k�
 >   Command: /usr/bin/arch -arm64e xcrun simctl install F98D3839-D090-4FF5-B57F-EF6DDD31DDAD
 >   /Users/mac/Documents/Development/Flutter/demo_flavor/build/ios/iphonesimulator/Runner.app
 
-thì hãy cứ bình tĩnh xử lý theo mình: Click chuột phải vào `Runner/Flutter` chọn *Show in Finder* và xem thử 3 file configuration dev, staging và product có đang nằm trong folder Runner/Flutter không. Nếu không, hãy move chúng vào. Sau đó quay về XCode bạn sẽ thấy giao diện đỏ lè như vậy
+thì hãy cứ bình tĩnh xử lý theo mình: Click chuột phải vào `Runner/Flutter` chọn *Show in Finder* và xem thử 3 file configuration dev, staging và product có đang nằm trong folder Runner/Flutter không. Nếu không, hãy move chúng vào. Sau đó quay về XCode bạn sẽ thấy giao diện đỏ lè như vậy:
 
 ![iOS - error - no configuration files](https://github.com/vanle57/flutter-flavor/blob/main/images/iOS%20-%20error%20-%20no%20configuration%20files.png)
 
@@ -197,12 +197,18 @@ Sau đó các bạn vào project Runner -> tab Info sẽ thấy "No Configuratio
 
 ![iOS - error - re-add configuration set](https://github.com/vanle57/flutter-flavor/blob/main/images/iOS%20-%20error%20-%20re-add%20configuration%20set.png)
 
-Nếu vẫn bị lỗi thì các bạn xui thôi! Mình đùa đấy, các bạn nhớ kiểm tra mình đã thêm dòng code <mark>#include "Generated.xcconfig"</mark> vào các configuration file chưa.
+Nếu vẫn bị lỗi thì các bạn xui thôi! Mình đùa đấy, các bạn nhớ kiểm tra mình đã thêm dòng code `#include "Generated.xcconfig"` vào các configuration file chưa.
 
 **Kết quả:** Bạn có thể thấy 3 cái app với 3 tên khác nhau tương ứng với các flavor do mình đã tạo ở bước trước đó!
-| iOS             | Android             |
-| --------------- | ------------------- |
-| ![iOS - Done](https://github.com/vanle57/flutter-flavor/blob/main/images/iOS%20-%20done.png) | ![Android - Done]() |
+<table width="100%">
+  <tr>
+    <th>iOS</th>
+    <th>Android</th>
+  <tr>
+  <td width="50%"><img src="https://github.com/vanle57/flutter-flavor/blob/main/images/iOS%20-%20done.png"></td>
+  <td width="50%"><img src="https://github.com/vanle57/flutter-flavor/blob/main/images/Android%20-%20done.png"></td>
+  </tr>
+</table>
 
 #### [Demo source code](https://github.com/vanle57/flutter-flavor/tree/main/demo%20source%20code/demo_flavor)
 
@@ -214,3 +220,4 @@ Tới đây về cơ bản là xong, nếu các bạn muốn sử dụng nút bu
 
 - [Bạn đã biết những gì về môi trường Production - Duong Trung Hieu](https://viblo.asia/p/ban-da-biet-nhung-gi-ve-moi-truong-production-ByEZkMBY5Q0)
 - [Flavoring Flutter - Salvatore Giordano](https://medium.com/@salvatoregiordanoo/flavoring-flutter-392aaa875f36)
+
