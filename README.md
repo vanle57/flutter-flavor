@@ -161,7 +161,7 @@ Không giống với android có thể thực hiện trên giao diện VSCode ho
     
     ![iOS - Edit Bundle Identifier](https://github.com/vanle57/flutter-flavor/blob/main/images/iOS%20-%20Edit%20Bundle%20Identifier.png)
 
-### 6. Thực thi
+## 6. Thực thi
 
 Phần config đã xong! Bây giờ mình cùng run bằng command để xem kết quả nhé!
 
@@ -212,7 +212,7 @@ Nếu vẫn bị lỗi thì các bạn xui thôi! Mình đùa đấy, các bạn
 
 #### [Demo source code](https://github.com/vanle57/flutter-flavor/tree/main/demo%20source%20code/demo_flavor)
 
-### 7. Tạm kết
+## 7. Tạm kết
 
 Tới đây về cơ bản là xong, nếu các bạn muốn sử dụng nút build thay vì phải gõ lệnh command thì có thể tham khảo bài viết ở [link này](). Cảm ơn và hẹn gặp lại.
 
