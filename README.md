@@ -214,7 +214,7 @@ Nếu vẫn bị lỗi thì các bạn xui thôi! Mình đùa đấy, các bạn
 
 ## 7. Tạm kết
 
-Tới đây về cơ bản là xong, nếu các bạn muốn sử dụng nút build thay vì phải gõ lệnh command thì có thể tham khảo bài viết ở [link này](). Cảm ơn và hẹn gặp lại.
+Tới đây về cơ bản là xong, nếu các bạn muốn sử dụng nút build thay vì phải gõ lệnh command thì có thể tham khảo bài viết ở [link này](https://github.com/vanle57/flutter-customize-run). Cảm ơn và hẹn gặp lại.
 
 #### Tài liệu tham khảo
 
