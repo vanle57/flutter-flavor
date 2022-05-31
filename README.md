@@ -90,16 +90,16 @@ productFlavors {
 
 1. Chúng ta định nghĩa dimension là `flavor-type` và 3 product flavor tương ứng với 3 môi trường dev, staging, product.
 
-2. Dòng code này để định nghĩa 1 biến kiểu string, tên biến là "app_name" và giá trị tương ứng cho mỗi flavor.
+2. Dòng code này để định nghĩa 1 biến kiểu string, tên biến là _app_name_ và giá trị tương ứng cho mỗi flavor.
 
-3. Định nghĩa các applicationIdSuffix tương ứng.
+3. Định nghĩa các `applicationIdSuffix` tương ứng.
 - Bước 2: (Tuỳ chọn) Định nghĩa app name, app icon riêng cho mỗi flavor trong file 
   
   `android/app/src/main/AndroidManifest.xml`
 
 ![Android - Edit app name](https://github.com/vanle57/flutter-flavor/blob/main/images/Android%20-%20Edit%20app%20name.png)
 
-****Lưu ý***: tên biến app_name ở đây phải tương ứng với tên biến đã define trong các product flavor mà chúng ta đã define trước đó ở build.gradle.
+****Lưu ý***: tên biến _app_name_ ở đây phải tương ứng với tên biến đã define trong các product flavor mà chúng ta đã define trước đó ở `build.gradle`.
 
 ### 5.2. Cấu hình cho iOS:
 
@@ -147,7 +147,7 @@ Không giống với android có thể thực hiện trên giao diện VSCode ho
     
     ![iOS - Add user-defined](https://github.com/vanle57/flutter-flavor/blob/main/images/iOS%20-%20Add%20user-defined.png)
   
-  - Đặt tên cho User-Defined là <mark>APP_NAME</mark> và đặt app name tương ứng với từng configuration.
+  - Đặt tên cho User-Defined là _APP_NAME_ và đặt app name tương ứng với từng configuration.
     
     ![iOS - Add user-defined - APP_NAME](https://github.com/vanle57/flutter-flavor/blob/main/images/iOS%20-%20Add%20user-defined%20-%20APP_NAME.png)
   
@@ -155,7 +155,7 @@ Không giống với android có thể thực hiện trên giao diện VSCode ho
     
     ![iOS - Edit Bundle Display Name](https://github.com/vanle57/flutter-flavor/blob/main/images/iOS%20-%20Edit%20Bundle%20Display%20Name.png)
   
-  - Thực hiên tương tự đối với <mark>APP_BUNDLE_IDENTIFIER</mark>
+  - Thực hiên tương tự đối với _APP_BUNDLE_IDENTIFIER_
     
     ![iOS - Add user-defined - APP_BUNDLE_INDENTIFIER](https://github.com/vanle57/flutter-flavor/blob/main/images/iOS%20-%20Add%20user-defined%20-%20APP_BUNDLE_INDENTIFIER.png)
     
@@ -183,7 +183,7 @@ Phần config đã xong! Bây giờ mình cùng run bằng command để xem k�
 >   Command: /usr/bin/arch -arm64e xcrun simctl install F98D3839-D090-4FF5-B57F-EF6DDD31DDAD
 >   /Users/mac/Documents/Development/Flutter/demo_flavor/build/ios/iphonesimulator/Runner.app
 
-thì hãy cứ bình tĩnh xử lý theo mình: Click chuột phải vào `Runner/Flutter` chọn *Show in Finder* và xem thử 3 file configuration dev, staging và product có đang nằm trong folder Runner/Flutter không. Nếu không, hãy move chúng vào. Sau đó quay về XCode bạn sẽ thấy giao diện đỏ lè như vậy:
+thì hãy cứ bình tĩnh xử lý theo mình: Click chuột phải vào `Runner/Flutter` chọn *Show in Finder* và xem thử 3 file configuration dev, staging và product có đang nằm trong folder `Runner/Flutter` không. Nếu không, hãy move chúng vào. Sau đó quay về XCode bạn sẽ thấy giao diện đỏ lè như vậy:
 
 ![iOS - error - no configuration files](https://github.com/vanle57/flutter-flavor/blob/main/images/iOS%20-%20error%20-%20no%20configuration%20files.png)
 
